@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  background: linear-gradient(to bottom, rgb(89, 82, 255),rgba(114, 161, 212, 0.808));
+  /* background-image: url('https://images.unsplash.com/photo-1600854985248-8efa369172ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjE1NDJ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDcxNTY0MTZ8&ixlib=rb-4.0.3&q=80&w=1080'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  flex-direction: column;
+}
+
+.hide{
+  display: none
+}
+
+.container{
+  background-color: #5952ff;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 3rem;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.705);
+  color: #fff;
+
+}
+
+.container h3{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+.form-input-container{
+  display: flex;
+  margin: 1.5rem 0.2rem;
+}
+
+.form-input-container input{
+  background-color: rgb(255, 255, 255);
+  height: 2rem;
+  width: 100%;
+  font-size: 1rem;
+  padding: 2%;
+}
+
+
+
+#search{
+  font-size: 1rem;
+  width: 20%;
+  background-color: #fff;
+  margin-left: 0.2rem;
+  box-shadow: 1px 1px 0.5px 0.5px rgba(0, 0, 0, 0.377);
+  transition: background-color,color 0.3s ease-in;
+  cursor: pointer;
+  
+}
+
+#search:active{
+  background-color: rgba(255, 255, 255, 0.671);
+  
+}
+
+#search:hover{
+  background-color: #5283FF;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-data{
+  border-top: 1px solid #fff;
+  padding: 1rem;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-data h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+}
+
+.weather-data h2 .icon{
+  font-size: 1rem;
+}
+
+#country{
+  height: 2rem;
+}
+
+#temperatura{
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+#description-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  
+}
+
+#weather-icon{
+  height: 2rem;
+}
+
+#details-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+#details-container #umidity{
+  border-right: 1px solid #fff;
+  margin-right: 0.8rem;
+  padding: 0.6rem;
+}
+
+#details-container p .icon{
+  margin-right: 0.3rem;
 }
